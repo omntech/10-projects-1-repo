@@ -21,7 +21,7 @@ body {
 
 body::after {
   content: "Muhammad Ortikov";
-  color: #fff;
+  color: #000;
   font-size: larger;
   position: fixed;
   top: 2%;
@@ -320,5 +320,8 @@ body::after {
       #445 21%,
       #223 100%
     );
+  }
+  body::after {
+  color: #fff;
   }
 }
