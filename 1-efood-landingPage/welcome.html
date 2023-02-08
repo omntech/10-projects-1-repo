@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>welcome to my webpage</title>
+
+	 <style>
+		*, *::before, *::after {
+			padding: 0;
+			margin: 0;
+		}
+
+		body {
+			width: 100%;
+			height: 100%;
+  			/* global 90%+ browsers support */
+  			background:conic-gradient(from 0deg at 50% 5%, rgba(11, 37, 80, 1) 0%, rgba(212, 0, 173, 1) 50%, rgba(11, 37, 80, 1) 100%);
+			color: #fff;
+			font-size: 20px;
+		}
+		.wrapper {
+			width: 80%;
+			height: 100vh;
+			margin: auto 0;
+			margin: 10% auto;
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+			text-align: justify;
+		}
+
+		h1, h2 {
+			margin-bottom: 1rem;
+		}
+
+		p {
+			line-height: 1.8rem;
+			font-weight: bold;
+		}
+
+		.btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 150px;
+			height: 50px;
+			border: none;
+			border-radius: 2rem;
+			outline: none;
+		}
+		
+		.btn.port {
+			    /* ff 3.6+ */
+				 background:-moz-radial-gradient(ellipse at 50% 50%, rgba(255, 59, 0, 1) 0%, rgba(255, 255, 0, 1) 100%);
+
+				 /* safari 5.1+,chrome 10+ */
+						 background:-webkit-radial-gradient(ellipse at 50% 50%, rgba(255, 59, 0, 1) 0%, rgba(255, 255, 0, 1) 100%);
+			
+				 /* opera 11.10+ */
+						 background:-o-radial-gradient(ellipse at 50% 50%, rgba(255, 59, 0, 1) 0%, rgba(255, 255, 0, 1) 100%);
+			
+				 /* ie 10+ */
+						 background:-ms-radial-gradient(ellipse at 50% 50%, rgba(255, 59, 0, 1) 0%, rgba(255, 255, 0, 1) 100%);
+			
+				 /* global 92%+ browsers support */
+						 background:radial-gradient(ellipse at 50% 50%, rgba(255, 59, 0, 1) 0%, rgba(255, 255, 0, 1) 100%);
+			
+		}
+
+		.btn button {
+			border: none;
+			background: none;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+			margin: 0;
+			padding: 0;
+			color: #383434;
+			font-weight: bold;
+		}
+
+		.portfolio {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 3.5rem;
+		}
+
+		.btn.efood {
+			background-color: #fff;
+		}
+
+	 </style>
+  </head>
+  <body>
+    <div class="wrapper">
+		<div class="welcome">
+		  <h1>Hello, my name is Muhammad</h1>
+		  <h2>Здравствуйте, меня зовут Мухаммад</h2>
+		</div>
+		<div class="info">
+		  <p>
+			 I am a Web Developer from Uzbekistan. <br />
+			 <br />
+			 I have worked as a design engineer for over two years and made drawings
+			 and technical documentation in Autocad and Solidworks. <br /><br />
+			 Later, last year, I changed my specialty and started my Web Developer
+			 career full-time! Since then, I have been learning, improving and making
+			 new designs(as much as possible). I love Coding, designing and making
+			 responsive websites. Some of my projects are available on GitHub
+			 account. I may not be a highly skilled professional Full-stack web
+			 developer but I am moving toward becoming one; despite this, if you
+			 consider working with me, I will give my best to deliver the expected
+			 results. <hr /><br />
+			 <p>Thank you for your interest and corporation.</p>
+		  </p>
+		</div>
+		<div class="portfolio">
+			<div class="btn port">
+				<a target="_blank" href="https://github.com/omntech"><button type="submit">portfolio</button></a>
+			</div>
+			<div class="btn efood">
+				<a target="_blank" href="./index.html"><button type="submit">EFood-store</button></a>
+			</div>
+				 </div>
+		</div>
+  </body>
+</html>

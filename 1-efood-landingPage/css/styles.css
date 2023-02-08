@@ -1,0 +1,628 @@
+/* 
+	* Landing page -- online food delivery system with many restaurants registered!
+	! the design should be fully responsive and meet the browser, client requirements. 
+	TODO: here in this landing page mainly  used flexbox technology, AND 12 column grid technology to distribute food vendors to make them flexible
+	? If you have any questions regarding to this landing page or thinking about having your own website please contact me!
+*/
+
+/* *Font export, main-fonts: Rubik regular, medium, light,bold, DM sans regular, Nunito regular*/
+
+/* *&display=swap */
+
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,700&display=swap&family=DM+Sans:regular&display=swap&family=Nunito:regular&display=swap);
+
+:root {
+  --main-black: #363853;
+  --main-content-color: #ff7a50;
+  --main-white: #fff;
+  --background-color: #f8f8fe;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-color: var(--background-color);
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 53%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Base styles */
+
+body {
+  width: 1440px;
+  height: 100%;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-black);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* main CONTAINER HEADER*/
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 13.5rem;
+  background-color: var(--background-color);
+  z-index: 10;
+}
+.logo {
+  font-size: 3.3rem;
+  margin: 1.5rem;
+}
+span {
+  color: var(--main-content-color);
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+.nav-list a:active {
+  color: var(--main-content-color);
+}
+.sign-up button {
+  background-color: var(--main-content-color);
+  color: white;
+  width: 10rem;
+  height: 5rem;
+  font-size: 1.8rem;
+  border: var(--main-content-color);
+  border-radius: 0.5rem;
+}
+
+/* Sections */
+.sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 8rem;
+  width: 100%;
+  padding: 5rem 13.5rem 0;
+  z-index: 0;
+}
+
+.delivery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 3rem;
+}
+
+.delivery-info h1 {
+  font-weight: 500;
+  line-height: 7.5rem;
+  font-size: 7rem;
+}
+.delivery-info p {
+  line-height: 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
+.delivery-app {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding-top: 3rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.delivery-app button {
+  width: 16rem;
+  height: 5rem;
+  font-size: 2rem;
+  color: var(--main-white);
+  background-color: var(--main-content-color);
+  border: none;
+  border-radius: 0.5rem;
+}
+.delivery-app p {
+  padding: 0;
+  text-decoration: underline;
+}
+
+.delivery-man p {
+  width: 100%;
+}
+
+/*section2 - food category */
+.food-cat {
+  padding-top: 8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.food-cat-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.flex-item1 {
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--main-white);
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  padding: 0 1.2rem;
+  width: 100%;
+}
+
+.flex-item1:active {
+  background-color: var(--main-content-color);
+  color: var(--main-white);
+}
+
+.flex-item .flex-item2 {
+  background-color: #fff;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+.img-burgers-logo {
+  width: 4.4rem;
+  height: 3.8rem;
+}
+
+.img-burgers {
+  width: 14rem;
+  height: 14rem;
+}
+.icon-star {
+  display: flex;
+  flex-direction: row;
+  margin: -2.5rem 0 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  align-items: center;
+  justify-content: center;
+}
+.name-price span {
+  display: block;
+  width: 100%;
+  padding-top: 2rem;
+  font-weight: 700;
+  color: #363853;
+}
+.btn-burger button {
+  width: 10.5rem;
+  height: 3rem;
+  background-color: var(--main-content-color);
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--main-white);
+}
+
+.side-move {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-move .dots {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #ff7a50;
+}
+
+/*FOOD delivery section */
+
+.stay-home ul li {
+  padding: 8rem 0 8rem 55rem;
+  background: url(/1-efood/img/svg/stayhome/foodeli.png) left center no-repeat;
+}
+.stay-home {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.stay-home-items p {
+  line-height: 3rem;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.stay-home-items ul li {
+  padding: 0 0 0 6.5rem;
+  line-height: 1rem;
+}
+.stay-home-items ul li:first-child {
+  background: url(/1-efood/img/svg/stayhome/Time.svg) left center no-repeat;
+}
+.stay-home-items ul li:nth-child(2) {
+  background: url(/1-efood/img/svg/stayhome/Delicon.svg) left center no-repeat;
+}
+.stay-home-items ul li:nth-child(3) {
+  background: url(/1-efood/img/svg/stayhome/Rest.svg) left center no-repeat;
+}
+.stay-home-items button {
+  width: 15rem;
+  height: 6rem;
+  border-radius: 10%;
+  color: var(--main-white);
+  background-color: var(--main-content-color);
+  border: none;
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+/*Restaurants section-grid contains 3rows and 3cols*/
+.rest {
+  width: 100%;
+  padding-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 4rem 3.5rem;
+  justify-content: center;
+}
+.grid-item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+}
+
+.grid-item p {
+  padding: 1.5rem 0 1rem 1.5rem;
+  font-size: 2rem;
+}
+
+.grid-item-all {
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-item-all p {
+  font-size: 1.5rem;
+  margin-left: -2.5rem;
+}
+
+.grid-item-all img {
+  width: 2rem;
+  height: 2rem;
+}
+.grid-item-all button {
+  display: block;
+  width: 5rem;
+  height: 3rem;
+  float: right;
+  background-color: var(--main-content-color);
+  border: none;
+  border-radius: 10%;
+}
+.grid-item-all button * {
+  float: right;
+  margin-right: 1rem;
+}
+
+/* 5-section mobile-app */
+.mobile-app {
+  padding-top: 14rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.mobile-app-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+mob-app-items h1 {
+  font-size: 3.5rem;
+}
+
+.app-and-store {
+  width: 12rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3.5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-app-right {
+  width: 50%;
+}
+
+/** 6-section clients satisfaction */
+.clients {
+  width: 100%;
+  padding-top: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  text-align: center;
+}
+
+.clients-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.clients-cont-left {
+  width: 40%;
+}
+
+.clients-cont-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5rem;
+}
+.right-comment {
+  text-align: left;
+  line-height: 3rem;
+}
+.right-author {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.right-author-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--main-content-color);
+}
+
+.right-author-1 div:last-child {
+  font-size: 1.5rem;
+  color: var(--main-black);
+}
+
+.right-author-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 3rem;
+}
+
+.right-author-2 img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/** 7-section subscribe */
+.subscribe {
+  width: 100%;
+  height: 30rem;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background-color: var(--main-content-color);
+  border-radius: 3rem;
+  color: var(--main-white);
+  padding: 0 3rem;
+}
+
+.subscribe-h1 {
+  font-weight: 500;
+}
+
+.subscribe-email {
+  height: 7.8rem;
+  width: 75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-white);
+  border-radius: 5rem;
+  padding: 0 1.5rem 0 5rem;
+}
+.subscribe-email input,
+.subscribe-email button {
+  border: none;
+  font-size: 1.8rem;
+}
+
+.subscribe-email button {
+  background: var(--main-content-color) url(/1-efood/img/svg/7-subscribe/tg.svg)
+    no-repeat 3.5rem center;
+  height: 5rem;
+  width: 18rem;
+  border-radius: 2.5rem;
+  color: var(--main-white);
+}
+.subscribe-email button span {
+  margin-left: 1.5rem;
+  padding: 0 1rem;
+}
+
+/* 
+	* 8-section footer
+	TODO	more flexbox in action 
+*/
+.footer {
+  margin: 8rem 0 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 4.5rem;
+}
+
+.footer__efood p:first-child {
+  font-size: 3rem;
+}
+
+.footer__efood .location {
+  background: url(/1-efood/img/svg/footer/geo-alt.svg) no-repeat left center;
+  padding-left: 2.5rem;
+}
+
+.footer__efood .mobile {
+  background: url(/1-efood/img/svg/footer/telephone.svg) no-repeat left center;
+  padding-left: 2.5rem;
+}
+
+.footer__efood .email {
+  background: url(/1-efood/img/svg/footer/envelope-at.svg) no-repeat left center;
+  padding-left: 2.5rem;
+}
+/*
+.footer__efood .socials {
+  background: left center / 15% no-repeat
+      url("/1-efood/img/svg/footer/facebook.svg"),
+    2.5rem center / 28% no-repeat url(/1-efood/img/svg/footer/instagram.svg),
+    8.5rem center / 15% no-repeat url(/1-efood/img/svg/footer/pinterest.svg);
+}
+*/
+.footer__efood .socials img {
+  display: inline-block;
+  width: 2rem;
+  margin-right: 2rem;
+}
+.black {
+  font-weight: bold;
+}
+
+/* * 9 - section FINALISSIMO
+	todo: copyright footer
+*/
+.footer-author {
+  font-family: "Nunito" sans-serif;
+  width: 100%;
+  padding: 2.5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #969696;
+  font-size: 1.5rem;
+}
+
+.footer-author-privacy p {
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+/* ! THE END */
