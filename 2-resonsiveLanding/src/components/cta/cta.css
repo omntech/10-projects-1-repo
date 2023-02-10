@@ -1,0 +1,89 @@
+.omntech__cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  padding: 2rem;
+  margin: 4rem;
+  border-radius: 1rem;
+  background: var(--gradient-bar);
+}
+
+.omntech__cta-content p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  /* or 250% */
+
+  color: #0e0e0e;
+}
+
+.omntech__cta-content h3 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 45px;
+  /* or 188% */
+
+  color: #000000;
+}
+
+.omntech__cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.omntech__cta-btn button {
+  background: #000000;
+  border-radius: 40px;
+
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+@media screen and (max-width: 650px) {
+  .omntech__cta {
+    flex-direction: column;
+  }
+  .omntech__cta-content {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .omntech__cta {
+    margin: 4rem 2rem;
+  }
+
+  .omntech__cta-content h3 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .omntech__cta-btn {
+    margin-right: 2rem;
+    padding: 0;
+  }
+
+  .omntech__cta-btn button {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}

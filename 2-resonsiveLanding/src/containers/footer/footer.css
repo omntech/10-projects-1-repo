@@ -1,0 +1,148 @@
+.omntech__footer {
+  background-color: var(--color-footer);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.omntech__footer-heading {
+  width: 100%;
+  text-align: center;
+
+  margin-bottom: 3rem;
+}
+
+.omntech__footer-heading h1 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  /* or 121% */
+  letter-spacing: -0.04em;
+}
+
+.omntech__footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #fff;
+  padding: 2rem;
+  margin-bottom: 10rem;
+  cursor: pointer;
+}
+
+.omntech__footer-btn p {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 21px;
+
+  word-spacing: 2px;
+  color: #ffffff;
+}
+
+.omntech__footer-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  text-align: left;
+  margin-bottom: 3.5rem;
+  color: #fff;
+}
+
+.omntech__footer-links_logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.omntech__footer-links_logo img {
+  width: 118px;
+  margin-bottom: 1rem;
+}
+
+.omntech__footer-links_logo p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.omntech__footer-links_div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 20rem;
+
+  margin-top: 2rem;
+}
+
+.omntech__footer-links_div h4 {
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 16px;
+
+  margin-bottom: 2rem;
+}
+
+.omntech__footer-links_div p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 14px;
+
+  margin-bottom: 1rem;
+}
+
+.omntech__footer-copyright {
+  text-align: center;
+  width: 100%;
+  margin-bottom: -2.5rem;
+}
+
+.omntech__footer-copyright p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 14px;
+  font-feature-settings: "liga" off;
+
+  color: #ffffff;
+}
+
+@media screen and (max-width: 850px) {
+  .omntech__footer-heading h1 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .omntech__footer-heading h1 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .omntech__footer-btn {
+    padding: 1rem;
+  }
+
+  .omntech__footer-links_div {
+    margin-top: 1rem;
+  }
+
+  .omntech__footer-links_div h4 {
+    margin: 0.8rem 0;
+  }
+
+  .omntech__footer-links_div p {
+    margin: 0.2rem 0;
+  }
+
+  .omntech__footer-copyright {
+    margin: -2.5rem 0;
+  }
+}
