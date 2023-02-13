@@ -1,3 +1,3 @@
 landingPage-fully responsive
 
-![landingPage](./Landing/LandingPage.png)
+![landing](./Landing/LandingPage.png)
