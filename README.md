@@ -60,4 +60,4 @@
 
 ### HTML5, CSS3, variables
 
-![./9-piano](./11-info/10-wheel.webm)
+![./10-animatedwheel](./11-info/10-wheel.webm)
