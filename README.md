@@ -60,4 +60,4 @@
 
 ### HTML5, CSS3, variables
 
-![./10-animatedwheel](./11-info/10-wheel.mp4)
+[<img src="./11-info/10-ferris.png">](./11-info/10-wheel.mp4)
