@@ -291,7 +291,6 @@ span {
 }
 
 .side-move {
-  padding-top: 4rem;
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -309,8 +308,7 @@ span {
 /*FOOD delivery section */
 
 .stay-home ul li {
-  padding: 8rem 0 8rem 55rem;
-  background: url(/1-efood/img/svg/stayhome/foodeli.png) left center no-repeat;
+  background: url("../img/svg/stayhome/foodeli.png") left center no-repeat;
 }
 .stay-home {
   margin-top: 8rem;
@@ -330,13 +328,13 @@ span {
   line-height: 1rem;
 }
 .stay-home-items ul li:first-child {
-  background: url(/1-efood/img/svg/stayhome/Time.svg) left center no-repeat;
+  background: url(../img/svg/stayhome/Time.svg) left center no-repeat;
 }
 .stay-home-items ul li:nth-child(2) {
-  background: url(/1-efood/img/svg/stayhome/Delicon.svg) left center no-repeat;
+  background: url(../img/svg/stayhome/Delicon.svg) left center no-repeat;
 }
 .stay-home-items ul li:nth-child(3) {
-  background: url(/1-efood/img/svg/stayhome/Rest.svg) left center no-repeat;
+  background: url(../img/svg/stayhome/Rest.svg) left center no-repeat;
 }
 .stay-home-items button {
   width: 15rem;
@@ -544,7 +542,7 @@ mob-app-items h1 {
 }
 
 .subscribe-email button {
-  background: var(--main-content-color) url(/1-efood/img/svg/7-subscribe/tg.svg)
+  background: var(--main-content-color) url(../img/svg/7-subscribe/tg.svg)
     no-repeat 3.5rem center;
   height: 5rem;
   width: 18rem;
